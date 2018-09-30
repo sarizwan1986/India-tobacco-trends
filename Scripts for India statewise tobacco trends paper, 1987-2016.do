@@ -6,7 +6,7 @@
 					  SECTION A: GENERAL SCHEMA FOR ANALYSIS
 					 ****************************************
 
-				       **Part I - Data preprocessing steps**
+				          **Part I - Data preprocessing steps**
 
 //Set working directory and log file
 cd “pathname of the folder in the system”
@@ -69,7 +69,7 @@ label values dual yesno
 //For NFHS surveys, weighting variable needs to be derived by dividing original weight by 1000000
 gen weighting= originalweight/1000000
 
-	**Part II - Statistical analysis - calculation of prevalence and 95% CI**
+			    **Part II - Statistical analysis - calculation of prevalence and 95% CI**
 
 						**1. Any smokeless tobacco use**
 		
@@ -125,16 +125,16 @@ putexcel A15=matrix(r(table)', names) using "surveyname", sheet(anytob) modify
 proportion anytob [pweight=weightingvariable], over(gendervariable statevariable)
 putexcel A90=matrix(r(table)', names) using "surveyname", sheet(anytob) modify
 
-________________________________________________________________________________
---------------------------------------------------------------------------------					 
-					 
-				  *****************************************
-				   SECTION B: CODES FOR INDIVIDUAL SURVEYS
-				  *****************************************
+__________________________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------------------------------					 
 
-					   ***************************
-						1. NSSO 43 CODES
-					   ***************************
+						  *****************************************
+						   SECTION B: CODES FOR INDIVIDUAL SURVEYS
+						  *****************************************
+
+							   ***************************
+								1. NSSO 43 CODES
+							   ***************************
 			   
 //Load the dataset
 Use "pathname of the datafile.dta", clear
