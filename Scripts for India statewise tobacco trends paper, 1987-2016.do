@@ -1,6 +1,6 @@
-*****************************************************************************
-SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
-***************************************************************************** 
+			*****************************************************************************
+			SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
+			***************************************************************************** 
 
 					 ****************************************
 					  SECTION A: GENERAL SCHEMA FOR ANALYSIS
@@ -9,7 +9,7 @@ SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
 				       **Part I - Data preprocessing steps**
 
 //Set working directory and log file
-cd ìpathname of the folder in the systemî
+cd ‚Äúpathname of the folder in the system‚Äù
 capture log using logfilename, text replace
 
 //Load the dataset
@@ -133,7 +133,7 @@ ________________________________________________________________________________
 				  *****************************************
 
 					   ***************************
-							  1. NSSO 43 CODES
+						1. NSSO 43 CODES
 					   ***************************
 			   
 //Load the dataset
@@ -227,7 +227,7 @@ putexcel A90=matrix(r(table)', names) using "nsso43", sheet(anytob1) modify
 
 
 					   ***************************
-							  2. NSSO 50 CODES
+						2. NSSO 50 CODES
 					   ***************************
 
 //Load the dataset
@@ -321,7 +321,7 @@ putexcel A90=matrix(r(table)', names) using "nsso50", sheet(anytob2) modify
 
 
 					   ***************************
-							 3. NSSO 52 CODES
+						3. NSSO 52 CODES
 					   ***************************
 
 //Load the dataset
@@ -415,7 +415,7 @@ putexcel A90=matrix(r(table)', names) using "nsso52", sheet(anytob3) modify
 
 
 					   ***************************
-							4. NFHS 2 CODES
+						4. NFHS 2 CODES
 					   ***************************
 
 					   
@@ -513,7 +513,7 @@ putexcel A90=matrix(r(table)', names) using "nfhs2", sheet(anytob4) modify
 
 
 					   ***************************
-							5.  NFHS 3 CODES
+						5.  NFHS 3 CODES
 					   ***************************
 			
 //Load the dataset
@@ -609,7 +609,7 @@ proportion anytob [pweight=weighting], over(hv104 stateclubbed)
 putexcel A90=matrix(r(table)', names) using "nfhs3", sheet(anytob5) modify
 
 					   ***************************
-							6. NFHS 4 CODES
+						6. NFHS 4 CODES
 					   ***************************
 
 //Load the dataset
@@ -706,7 +706,7 @@ putexcel A90=matrix(r(table)', names) using "nfhs4", sheet(anytob8) modify
 
 
 					   ***************************
-							7. DLHS 4 CODES
+						7. DLHS 4 CODES
 					   ***************************  
 
 //Load the dataset
@@ -782,7 +782,7 @@ putexcel A90=matrix(r(table)', names) using "dlhs4", sheet(anytob7) modify
 
 					   
 					   ***************************
-							8. GATS 1 CODES
+						8. GATS 1 CODES
 					   ***************************  
 
 //Load the dataset
@@ -876,7 +876,7 @@ putexcel A90=matrix(r(table)', names) using "gats1", sheet(anytob6) modify
 					   
 					   				   
 					   ***************************
-							9. GATS 2 CODES
+						9. GATS 2 CODES
 					   ***************************
 					
 //Load the dataset
