@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 *****************************************************************************
 SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
 ***************************************************************************** 
 -BY Dr. Rizwan SA (1.10.2018)
-=======
-			*****************************************************************************
-			SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
-			***************************************************************************** 
+=============================
 
->>>>>>> faa0c29fb4f6faa8aca38dea4c1ebc0f88ec4b47
 					 ****************************************
 					  SECTION A: GENERAL SCHEMA FOR ANALYSIS
 					 ****************************************
@@ -16,11 +11,7 @@ SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
 				          **Part I - Data preprocessing steps**
 
 //Set working directory and log file
-<<<<<<< HEAD
-cd pathname of the folder in the system
-=======
 cd “pathname of the folder in the system”
->>>>>>> faa0c29fb4f6faa8aca38dea4c1ebc0f88ec4b47
 capture log using logfilename, text replace
 
 //Load the dataset
@@ -80,14 +71,9 @@ label values dual yesno
 //For NFHS surveys, weighting variable needs to be derived by dividing original weight by 1000000
 gen weighting= originalweight/1000000
 
-<<<<<<< HEAD
-	
 	
 	**Part II - Statistical analysis - calculation of prevalence and 95% CI**
-=======
-			    **Part II - Statistical analysis - calculation of prevalence and 95% CI**
->>>>>>> faa0c29fb4f6faa8aca38dea4c1ebc0f88ec4b47
-
+	
 **1. Any smokeless tobacco use**
 		
 //calculate prevalence, national level
@@ -245,7 +231,6 @@ proportion anytob [pweight=Wgt], over(B4_q4 State)
 putexcel A90=matrix(r(table)', names) using "nsso43", sheet(anytob1) modify
 
 
-
 					   ***************************
 						2. NSSO 50 CODES
 					   ***************************
@@ -339,7 +324,6 @@ putexcel A15=matrix(r(table)', names) using "nsso50", sheet(anytob2) modify
 
 proportion anytob [pweight=Wgt_Combined], over(B4_q4 State)
 putexcel A90=matrix(r(table)', names) using "nsso50", sheet(anytob2) modify
-
 
 
 					   ***************************
@@ -437,13 +421,11 @@ proportion anytob [pweight=MULT_COMB], over(SEX STATE)
 putexcel A90=matrix(r(table)', names) using "nsso52", sheet(anytob3) modify
 
 
-
 					   ***************************
 						4. NFHS 2 CODES
 					   ***************************
 
-				
-				
+					
 //Load the dataset
 Use "NFHS 2_ IAPR42FL.dta", clear
 
@@ -638,8 +620,7 @@ putexcel A90=matrix(r(table)', names) using "nfhs3", sheet(anytob5) modify
 					   ***************************
 						6. NFHS 4 CODES
 					   ***************************
-
-					   
+		   
 //Load the dataset
 Use "NFHS 4_IAMR71FL+IAIR71FL.dta", clear					   
 					   
