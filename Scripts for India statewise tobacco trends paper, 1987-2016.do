@@ -1,8 +1,7 @@
-*****************************************************************************
-SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
-***************************************************************************** 
--BY Dr. Rizwan SA (1.10.2018)
-=============================
+			*****************************************************************************
+			SCRIPTS WRITTEN IN STATA FOR INDIA STATE WISE TOBACCO TRENDS PAPER, 1987-2016
+			***************************************************************************** 
+						By Dr. Rizwan SA (1.10.2018)
 
 					 ****************************************
 					  SECTION A: GENERAL SCHEMA FOR ANALYSIS
@@ -72,7 +71,7 @@ label values dual yesno
 gen weighting= originalweight/1000000
 
 	
-	**Part II - Statistical analysis - calculation of prevalence and 95% CI**
+				**Part II - Statistical analysis - calculation of prevalence and 95% CI**
 	
 **1. Any smokeless tobacco use**
 		
